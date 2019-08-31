@@ -1,0 +1,6 @@
+export const SET_FILTER_QUERY = 'SET_FILTER_QUERY'
+export const SAVE_DATA = 'SAVE_DATA'
+export const DELETE_DATA = 'DELETE_DATA'
+export const AUTH_LOGIN = 'AUTH_LOGIN'
+export const FETCH_RESERVATIONS = 'FETCH_RESERVATIONS'
+export const SIGNUP = 'SIGNUP'

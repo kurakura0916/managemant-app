@@ -8,30 +8,44 @@
 - ローカル環境
 ```bash
 # ビルド
-docker-compose build
+$ docker-compose build
 
 # バックグラウンドでコンテナを起動
-docker-compose up -d
+$ docker-compose up -d
 
 # app(フロントエンド)のコンテナに入る
-docker-compose exec app /bin/ash
+$ docker-compose exec app /bin/ash
 ```
 
 - appコンテナ内
 ```bash
-ls
-> Dockerfile
+$ ls
+Dockerfile
 
-vue create app
-cd app
+$ vue create app
+$ cd app
 
 # vuetifyを追加
-vue add vuetify
+$ vue add vuetify
 
 # package.jsonに記載されているライブラリーをインストール
-npm install
+$ npm install
 
 # 起動
-npm run serve
+$ npm run serve
 ```
 
+### バックエンド
+
+```
+$ cd backend
+
+$ python --version
+Python 3.6.3
+
+$ python -m venv env
+
+$ . env/bin/activate
+
+$ (env) pip install -r ./api/requirements.txt
+```
